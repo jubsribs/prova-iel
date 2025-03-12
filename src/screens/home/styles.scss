@@ -1,0 +1,53 @@
+@import "../../assets/styles/tools.scss";
+@import '../../assets/styles/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+  .home-body {
+    width: 100%;
+    background-color: map-get($background, 'screen');
+
+    .title-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 20px;
+
+      h1 {
+        font-family: 'Reddit Mono';
+        font-weight: 900;
+        font-size: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: map-get($font-color, 'name-card');
+      }
+
+      hr {
+        box-sizing: border-box;
+        border-bottom: 10px solid #36b42f;
+        border-radius: 8px;
+        border-color: map-get($background, 'line');
+        ;
+        width: 20%;
+      }
+    }
+
+    .home-screen {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 1rem;
+
+      .maps-body {
+        align-items: flex-start;
+      }
+
+      .user-body {
+        align-items: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+/**
+ * Atribui o layout Flex no formato linha
+ */
+
+ @mixin row($x, $y) {
+	display: flex;
+	flex-direction: row;
+	align-items: $x;
+	justify-content: $y;
+}
+
+/**
+ * Atribui o layout Flex no formato coluna
+ */
+
+@mixin column($x, $y) {
+	display: flex;
+	flex-direction: column;
+	align-items: $y;
+	justify-content: $x;
+}
+
+@mixin column-reverse($x, $y) {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: $x;
+	justify-content: $y;
+}
+
+/**
+ * Utilizado para arredondar as bordas do elemento até que vire
+ * um circulo
+ */
+
+@mixin circle($size) {
+	width: $size;
+	max-width: $size;
+	height: $size;
+	min-height: $size;
+	border-radius: 100%;
+}

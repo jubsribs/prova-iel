@@ -1,0 +1,20 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/tools.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  button.opus-button {
+    @include column(center, center);
+    min-width: 114px;
+    cursor: pointer;
+    background-color: map-get($background, 'button');
+    font-family: 'Open Sans';
+    color: map-get($font-color, 'title');
+    width: 180px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    padding: 12px 10px;
+  }
+}
