@@ -20,6 +20,7 @@ outra de sua preferência.
 1º Baixar o repositório no git.
 
 2º Instalar as dependências do projeto, comando do terminal: npm install
+Versão do Node utilizada: v20.9.0
 
 3º Para rodar o projeto , comando do terminal: npm run dev
 
